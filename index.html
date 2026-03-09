@@ -1,9 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-  <title>My Site</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leandro Paganello | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
 <body>
-  <h1>Hello world</h1>
+
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <nav>
+        <div class="logo hover-trigger">leandropaganello</div>
+        <div class="nav-links">
+            <a href="#about" class="hover-trigger">About</a>
+            <a href="#tech" class="hover-trigger">Expertise</a>
+            <a href="#work" class="hover-trigger">Selected Work</a>
+            <a href="#contact" class="hover-trigger">Contact</a>
+        </div>
+    </nav>
+
+    <header id="about">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <p class="overline reveal">Technical Director</p>
+                <h1 class="reveal delay-1">
+                    Leandro <br>
+                    <span class="text-gradient">Paganello</span>
+                </h1>
+                <p class="subtitle reveal delay-2">
+                Technischer Leiter bei der TRAX Jugendkirche.
+                </p>
+                <div class="btn-group reveal delay-3">
+                    <a href="#work" class="btn btn-primary hover-trigger">Projekte</a>
+                    <a href="mailto:leandro.paganello@credo-kirche.de" class="btn btn-secondary hover-trigger">Kontakt</a>
+                </div>
+            </div>
+            <div class="hero-image reveal delay-3">
+                <div class="image-wrapper">
+                    <img src="pictures/profile.jpg" alt="Leandro Paganello" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="tech">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Expertise</h2>
+                <div class="line"></div>
+            </div>
+            <div class="grid-3">
+                <div class="card hover-trigger reveal">
+                    <div class="icon-box"><i class="fas fa-sliders-h"></i></div>
+                    <h3>Lyrics Operator</h3>
+                    <p>Bedienung des Computers mit ProPresenter. Grafikerstellung, die bewegt.</p>
+                </div>
+                <div class="card hover-trigger reveal">
+                    <div class="icon-box"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Lighting</h3>
+                    <p>Kreative Lichtshows. Programmierung auf GrandMA Konsolen.</p>
+                </div>
+                <div class="card hover-trigger reveal">
+                    <div class="icon-box"><i class="fas fa-broadcast-tower"></i></div>
+                    <h3>Live Broadcast</h3>
+                    <p>Zuverlässige Streaming-Setups mit OBS und NDI-Netzwerken.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Selected Work</h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="project-card reveal hover-trigger">
+                <div class="project-image">
+                    <img src="pictures/event.jpg" alt="Weihnachtsspecial" onerror="this.src='https://via.placeholder.com/800x600/1a1a1a/333?text=Event+Image'">
+                </div>
+                <div class="project-content">
+                    <span class="tag">Highlight 2025</span>
+                    <h3>Weihnachtsspecial</h3>
+                    <p>Technischer Helfer für ein Event mit über 1.500 Besuchern. Koordination von Audio, Licht, Video und Livestream in einem 30-köpfigen Team.</p>
+                    <ul class="tech-list">
+                        <li>FOH Audio</li>
+                        <li>GrandMA2</li>
+                        <li>Teamleitung</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container contact-container reveal">
+            <h2>Lass uns sprechen.</h2>
+            <p>Offen für technische Leitungen und kreativen Austausch.</p>
+            <a href="mailto:leandro.paganello@credo-kirche.de" class="email-link hover-trigger">
+                leandro.paganello@credo-kirche.de
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            
+            <div class="socials">
+                <a href="https://instagram.com/leandro.paganello" class="hover-trigger"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/leandropaganello" class="hover-trigger"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 leandropaganello</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
