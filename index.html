@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio von Leandro Paganello, Technical Director bei der TRAX Jugendkirche. Expertise in Lyrics Operator, Lighting und Predigten." />
     <title>Leandro Paganello | Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="scripts.js"></script>
@@ -12,6 +13,7 @@
 
     <div id="cursor-dot"></div>
     <div id="cursor-ring"></div>
+    <div id="progress-bar"></div>
 
     <nav>
         <div class="logo hover-trigger">leandropaganello</div>
@@ -41,7 +43,7 @@
             </div>
             <div class="hero-image reveal delay-3">
                 <div class="image-wrapper">
-                    <img src="profile.jpg" alt="Leandro Paganello" onerror="this.style.display='none'">
+                    <img src="pngs/profile.jpg" alt="Leandro Paganello" loading="lazy" onerror="this.style.display='none'">
                 </div>
             </div>
         </div>
@@ -66,8 +68,42 @@
                 </div>
                 <div class="card hover-trigger reveal">
                     <div class="icon-box"><i class="fas fa-broadcast-tower"></i></div>
-                    <h3>Live Broadcast</h3>
-                    <p>Zuverlässige Streaming-Setups mit OBS und NDI-Netzwerken.</p>
+                    <h3>Predigten</h3>
+                    <p>Keine langweiligen Gottesdienste. Predigt mit Design</p>
+                </div>
+            </div>
+            
+            <div class="skills-section reveal">
+                <h3>Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <svg class="progress-circle" width="120" height="120">
+                            <circle cx="60" cy="60" r="50" stroke="var(--border)" stroke-width="10" fill="none"></circle>
+                            <circle cx="60" cy="60" r="50" stroke="var(--primary)" stroke-width="10" fill="none" stroke-dasharray="314" stroke-dashoffset="31.4" class="progress-circle-fill" data-percent="99"></circle>
+                        </svg>
+                        <span>ProPresenter</span>
+                    </div>
+                    <div class="skill">
+                        <svg class="progress-circle" width="120" height="120">
+                            <circle cx="60" cy="60" r="50" stroke="var(--border)" stroke-width="10" fill="none"></circle>
+                            <circle cx="60" cy="60" r="50" stroke="var(--primary)" stroke-width="10" fill="none" stroke-dasharray="314" stroke-dashoffset="47.1" class="progress-circle-fill" data-percent="85"></circle>
+                        </svg>
+                        <span>GrandMA2 Lighting</span>
+                    </div>
+                    <div class="skill">
+                        <svg class="progress-circle" width="120" height="120">
+                            <circle cx="60" cy="60" r="50" stroke="var(--border)" stroke-width="10" fill="none"></circle>
+                            <circle cx="60" cy="60" r="50" stroke="var(--primary)" stroke-width="10" fill="none" stroke-dasharray="314" stroke-dashoffset="62.8" class="progress-circle-fill" data-percent="38"></circle>
+                        </svg>
+                        <span>Audio Engineering</span>
+                    </div>
+                    <div class="skill">
+                        <svg class="progress-circle" width="120" height="120">
+                            <circle cx="60" cy="60" r="50" stroke="var(--border)" stroke-width="10" fill="none"></circle>
+                            <circle cx="60" cy="60" r="50" stroke="var(--primary)" stroke-width="10" fill="none" stroke-dasharray="314" stroke-dashoffset="78.5" class="progress-circle-fill" data-percent="30"></circle>
+                        </svg>
+                        <span>Graphic Design</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -80,19 +116,48 @@
                 <div class="line"></div>
             </div>
             
-            <div class="project-card reveal hover-trigger">
-                <div class="project-image">
-                    <img src="event.jpg" alt="Weihnachtsspecial" onerror="this.src='https://via.placeholder.com/800x600/1a1a1a/333?text=Event+Image'">
+            <div class="filter-buttons reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="2025">2025</button>
+                <button class="filter-btn" data-filter="2024">2024</button>
+                <button class="filter-btn" data-filter="ongoing">Ongoing</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card reveal hover-trigger" data-category="2025">
+                    <div class="project-image">
+                        <img src="pngs/event.jpg" alt="Weihnachtsspecial" loading="lazy" onerror="this.src='https://via.placeholder.com/800x600/1a1a1a/333?text=Event+Image'">
+                    </div>
+                    <div class="project-content">
+                        <span class="tag">Highlight 2025</span>
+                        <h3>Weihnachtsspecial</h3>
+                        <p>Technischer Helfer für ein Event mit über 1.500 Besuchern. Koordination von Audio, Licht, Video und Livestream in einem 30-köpfigen Team.</p>
+                        <button class="btn btn-secondary view-details" data-details="Technischer Helfer für ein Event mit über 1.500 Besuchern. Koordination von Audio, Licht, Video und Livestream in einem 30-köpfigen Team. Verantwortlich für die gesamte technische Umsetzung, einschließlich Soundcheck, Lichtprogrammierung und Live-Übertragung. Zusammenarbeit mit dem Produktionsteam für nahtlose Abläufe." data-image="event.jpg"><i class="fas fa-eye"></i> View Details</button>
+                    </div>
                 </div>
-                <div class="project-content">
-                    <span class="tag">Highlight 2025</span>
-                    <h3>Weihnachtsspecial</h3>
-                    <p>Technischer Helfer für ein Event mit über 1.500 Besuchern. Koordination von Audio, Licht, Video und Livestream in einem 30-köpfigen Team.</p>
-                    <ul class="tech-list">
-                        <li>FOH Audio</li>
-                        <li>GrandMA2</li>
-                        <li>Teamleitung</li>
-                    </ul>
+                
+                <div class="project-card reveal hover-trigger" data-category="2024">
+                    <div class="project-image">
+                        <img src="pngs/photography.png" alt="Lighting Show" loading="lazy" onerror="this.src='https://via.placeholder.com/800x600/1a1a1a/333?text=Lighting+Show'">
+                    </div>
+                    <div class="project-content">
+                        <span class="tag">2024</span>
+                        <h3>Fotograf</h3>
+                        <p>Fotos, die Erinnerungen wachrufen und Momente schaffen.</p>
+                        <button class="btn btn-secondary view-details" data-details="Fotos, die Erinnerungen wachrufen und Momente schaffen. Spezialisiert auf Ereignisfotografie und Porträtfotografie. Verwendung moderner Technik und kreativer Ansätze zur Erstellung ansprechender Bilder." data-image="pngs/photography.png"><i class="fas fa-eye"></i> View Details</button>
+                    </div>
+                </div>
+                
+                <div class="project-card reveal hover-trigger" data-category="ongoing">
+                    <div class="project-image">
+                        <img src="pngs/presentation.jpg" alt="Predigt Design" loading="lazy" onerror="this.src='https://via.placeholder.com/800x600/1a1a1a/333?text=Presentation+Design'">
+                    </div>
+                    <div class="project-content">
+                        <span class="tag">Ongoing</span>
+                        <h3>Predigten mit Design</h3>
+                        <p>Erstellung ansprechender Präsentationen für Gottesdienste. Kombination von visuellen Elementen und Inhalten für engagierte Zuhörer.</p>
+                        <button class="btn btn-secondary view-details" data-details="Erstellung ansprechender Präsentationen für Gottesdienste. Kombination von visuellen Elementen und Inhalten für engagierte Zuhörer. Design von Slides, die biblische Texte, Bilder und Videos integrieren. Fokus auf Lesbarkeit, Ästhetik und Engagement, um die Botschaft effektiv zu vermitteln." data-image="pngs/presentation.jpg"><i class="fas fa-eye"></i> View Details</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -101,7 +166,7 @@
     <section id="contact">
         <div class="container contact-container reveal">
             <h2>Lass uns sprechen.</h2>
-            <p>Offen für technische Leitungen und kreativen Austausch.</p>
+            <p>Offen für kreativen Austausch.</p>
             <a href="mailto:leandro.paganello@credo-kirche.de" class="email-link hover-trigger">
                 leandro.paganello@credo-kirche.de
                 <i class="fas fa-arrow-right"></i>
@@ -115,9 +180,22 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 leandropaganello</p>
+        <p>&copy; 2024-2026 leandropaganello</p>
     </footer>
 
-    <script src="script.js"></script>
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+
+    <!-- Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="Project Image" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
