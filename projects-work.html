@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Weitere Projekte von Leandro Paganello" />
+    <title>Weitere Projekte | Leandro Paganello</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+    <div id="progress-bar"></div>
+
+    <nav>
+        <div class="logo hover-trigger"><a href="index.html" style="color: inherit; text-decoration: none;">leandropaganello</a></div>
+        <div class="nav-links">
+            <a href="index.html#about" class="hover-trigger">About</a>
+            <a href="index.html#tech" class="hover-trigger">Expertise</a>
+            <a href="index.html#work" class="hover-trigger">Selected Work</a>
+            <a href="index.html#contact" class="hover-trigger">Contact</a>
+        </div>
+        <button id="theme-toggle" class="hover-trigger" aria-label="Toggle theme"><i id="theme-icon" class="fas fa-moon"></i></button>
+    </nav>
+
+    <header id="more-work" style="padding-top:120px; padding-bottom:60px; text-align:center;">
+        <div class="container">
+            <h1 class="reveal">Weitere Projekte</h1>
+            <p class="subtitle reveal delay-1" style="color: var(--text-muted); margin: 20px 0;">Entdecke mehr von meinen technischen Projekten und Arbeiten</p>
+            <div class="btn-group reveal delay-1" style="justify-content:center; margin-top:20px;">
+                <a href="index.html#work" class="btn btn-secondary hover-trigger">Zurück zur Startseite</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="work-list">
+        <div class="container">
+            <div class="filter-buttons reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="2025">2025</button>
+                <button class="filter-btn" data-filter="2024">2024</button>
+                <button class="filter-btn" data-filter="ongoing">Ongoing</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal hover-trigger" data-category="2025">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/800x600/1a1a1a/8a2be2?text=Event+Lighting" alt="Event Lighting & Sound" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <span class="tag">2025</span>
+                        <h3>Tech Event Lighting & Sound</h3>
+                        <p>Komplette Lichttechnik und Sound Design für Technologie-Event mit 800+ Teilnehmern. GrandMA2 Lighting Setup mit DMX Control.</p>
+                        <div style="display:flex; gap:8px; flex-wrap:wrap; margin:15px 0;">
+                            <span style="background:rgba(138,43,226,0.2); color:var(--primary); padding:4px 12px; border-radius:20px; font-size:0.8rem;">GrandMA2</span>
+                            <span style="background:rgba(138,43,226,0.2); color:var(--primary); padding:4px 12px; border-radius:20px; font-size:0.8rem;">Audio</span>
+                            <span style="background:rgba(138,43,226,0.2); color:var(--primary); padding:4px 12px; border-radius:20px; font-size:0.8rem;">Design</span>
+                        </div>
+                        <button class="btn btn-secondary view-details" data-details="Event Lighting komplett inszeniert. Von Planung über Programmierung bis zur Live-Umsetzung. Farbtheorie und Timing für maximalen Impact." data-image="https://via.placeholder.com/800x600/1a1a1a/8a2be2?text=Event+Lighting"><i class="fas fa-eye"></i> View Details</button>
+                    </div>
+                </div>
+
+                <div class="project-card reveal hover-trigger" data-category="2024">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/800x600/1a1a1a/a78bfa?text=ProPresenter" alt="ProPresenter Workflow" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <span class="tag">2024</span>
+                        <h3>ProPresenter Workflow Design</h3>
+                        <p>Komplette ProPresenter-Vorlage mit Animationen und Übergängen. Erstellt für 52 Gottesdienste im Jahr mit einheitlichem Design.</p>
+                        <div style="display:flex; gap:8px; flex-wrap:wrap; margin:15px 0;">
+                            <span style="background:rgba(138,43,226,0.2); color:var(--primary); padding:4px 12px; border-radius:20px; font-size:0.8rem;">ProPresenter</span>
+                            <span style="background:rgba(138,43,226,0.2); color:var(--primary); padding:4px 12px; border-radius:20px; font-size:0.8rem;">Design</span>
+                            <span style="background:rgba(138,43,226,0.2); color:var(--primary); padding:4px 12px; border-radius:20px; font-size:0.8rem;">Workflow</span>
+                        </div>
+                        <button class="btn btn-secondary view-details" data-details="ProPresenter Templates mit reusable Assets. Timing optimiert für Predigten. Animation gibt visuelle Kraft zu Worten." data-image="https://via.placeholder.com/800x600/1a1a1a/a78bfa?text=ProPresenter"><i class="fas fa-eye"></i> View Details</button>
+                    </div>
+                </div>
+
+                <div class="project-card reveal hover-trigger" data-category="ongoing">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/800x600/1a1a1a/ff1493?text=Multimedia" alt="Multimedia Integration" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <span class="tag">Ongoing</span>
+                        <h3>Multimedia Integration System</h3>
+                        <p>Live-Streaming, Recording und Multimedia Synchronisation. Integration von ProPresenter, GrandMA2 und Audio für nahtlose Produktion.</p>
+                        <div style="display:flex; gap:8px; flex-wrap:wrap; margin:15px 0;">
+                            <span style="background:rgba(138,43,226,0.2); color:var(--primary); padding:4px 12px; border-radius:20px; font-size:0.8rem;">Integration</span>
+                            <span style="background:rgba(138,43,226,0.2); color:var(--primary); padding:4px 12px; border-radius:20px; font-size:0.8rem;">Streaming</span>
+                            <span style="background:rgba(138,43,226,0.2); color:var(--primary); padding:4px 12px; border-radius:20px; font-size:0.8rem;">Tech</span>
+                        </div>
+                        <button class="btn btn-secondary view-details" data-details="Mehrgleisige Technik-Integration: Video, Audio, Licht alle synchron. Redundanz-Systeme für kritische Events." data-image="https://via.placeholder.com/800x600/1a1a1a/ff1493?text=Multimedia"><i class="fas fa-eye"></i> View Details</button>
+                    </div>
+                </div>
+
+                <div class="project-card reveal hover-trigger" data-category="2025">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/800x600/1a1a1a/06b6d4?text=Production" alt="Outdoor Production" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <span class="tag">2025</span>
+                        <h3>Outdoor Event Production</h3>
+                        <p>Mobile Lichttechnik und Sound für Open-Air Events. Wetterfeste Ausrüstung und Backup-Systeme für zuverlässigen Betrieb.</p>
+                        <div style="display:flex; gap:8px; flex-wrap:wrap; margin:15px 0;">
+                            <span style="background:rgba(138,43,226,0.2); color:var(--primary); padding:4px 12px; border-radius:20px; font-size:0.8rem;">Outdoor</span>
+                            <span style="background:rgba(138,43,226,0.2); color:var(--primary); padding:4px 12px; border-radius:20px; font-size:0.8rem;">Mobile</span>
+                            <span style="background:rgba(138,43,226,0.2); color:var(--primary); padding:4px 12px; border-radius:20px; font-size:0.8rem;">Production</span>
+                        </div>
+                        <button class="btn btn-secondary view-details" data-details="100% mobile Setup. Schneller Aufbau und Abbau. Getestete Backup-Systeme für alle kritischen Komponenten." data-image="https://via.placeholder.com/800x600/1a1a1a/06b6d4?text=Production"><i class="fas fa-eye"></i> View Details</button>
+                    </div>
+                </div>
+
+                <div class="project-card reveal hover-trigger" data-category="2024">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/800x600/1a1a1a/ec4899?text=Streaming" alt="Streaming & Broadcasting" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <span class="tag">2024</span>
+                        <h3>Streaming & Live Broadcasting</h3>
+                        <p>Multi-Kamera Live-Streaming Setup. 1080p 60fps Broadcast zu YouTube, Facebook und Vimeo gleichzeitig. Weltweite Zuschauer</p>
+                        <div style="display:flex; gap:8px; flex-wrap:wrap; margin:15px 0;">
+                            <span style="background:rgba(138,43,226,0.2); color:var(--primary); padding:4px 12px; border-radius:20px; font-size:0.8rem;">Streaming</span>
+                            <span style="background:rgba(138,43,226,0.2); color:var(--primary); padding:4px 12px; border-radius:20px; font-size:0.8rem;">Video</span>
+                            <span style="background:rgba(138,43,226,0.2); color:var(--primary); padding:4px 12px; border-radius:20px; font-size:0.8rem;">Broadcasting</span>
+                        </div>
+                        <button class="btn btn-secondary view-details" data-details="Multi-Plattform Broadcasting mit optimierten Settings. Auto-Switching bei Netzwerk-Ausfällen. 24/7 Verfügbarkeit." data-image="https://via.placeholder.com/800x600/1a1a1a/ec4899?text=Streaming"><i class="fas fa-eye"></i> View Details</button>
+                    </div>
+                </div>
+
+                <div class="project-card reveal hover-trigger" data-category="ongoing">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/800x600/1a1a1a/14b8a6?text=Hardware" alt="Hardware Solutions" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <span class="tag">Ongoing</span>
+                        <h3>Custom Hardware Solutions</h3>
+                        <p>Speziell entwickelte Hardware-Lösungen für komplexe Anforderungen. Schrank-Systeme und automatisierte Kontrollpults für Events</p>
+                        <div style="display:flex; gap:8px; flex-wrap:wrap; margin:15px 0;">
+                            <span style="background:rgba(138,43,226,0.2); color:var(--primary); padding:4px 12px; border-radius:20px; font-size:0.8rem;">Hardware</span>
+                            <span style="background:rgba(138,43,226,0.2); color:var(--primary); padding:4px 12px; border-radius:20px; font-size:0.8rem;">Custom</span>
+                            <span style="background:rgba(138,43,226,0.2); color:var(--primary); padding:4px 12px; border-radius:20px; font-size:0.8rem;">Automation</span>
+                        </div>
+                        <button class="btn btn-secondary view-details" data-details="Maßgeschneiderte Hardware pro Anforderung. Einfache One-Button-Kontrolle für komplexe Setups. Wartungsfreundliches Design." data-image="https://via.placeholder.com/800x600/1a1a1a/14b8a6?text=Hardware"><i class="fas fa-eye"></i> View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="copyright-year"></span> leandropaganello | <a href="impressum.html" style="color: inherit; text-decoration: none;">Impressum</a></p>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+
+    <!-- reuse modal from index -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="Project Image" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
