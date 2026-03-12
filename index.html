@@ -23,6 +23,7 @@
             <a href="#work" class="hover-trigger">Selected Work</a>
             <a href="#contact" class="hover-trigger">Contact</a>
         </div>
+        <button id="theme-toggle" class="hover-trigger" aria-label="Toggle theme"><i id="theme-icon" class="fas fa-moon"></i></button>
     </nav>
 
     <header id="about">
@@ -39,6 +40,16 @@
                 <div class="btn-group reveal delay-3">
                     <a href="#work" class="btn btn-primary hover-trigger">Projekte</a>
                     <a href="mailto:leandro.paganello@credo-kirche.de" class="btn btn-secondary hover-trigger">Kontakt</a>
+                    <a href="#cv-download" class="btn btn-secondary hover-trigger" id="cv-btn"><i class="fas fa-download"></i> CV</a>
+                </div>
+                <!-- Hidden: Click CV button 3 times to reveal alternatives -->
+                <div id="hidden-contact-options" style="display:none; margin-top:30px; padding:20px; background:rgba(138,43,226,0.1); border-radius:12px; border:1px solid var(--primary); text-align:center;">
+                    <p style="margin-bottom:15px; color:var(--text-muted);">🔓 Weitere Möglichkeiten:</p>
+                    <div style="display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
+                        <a href="tel:+491525851861" class="btn btn-secondary" style="flex:1; min-width:150px;"><i class="fas fa-phone"></i> Anrufen</a>
+                        <a href="https://linkedin.com/in/leandropaganello" target="_blank" class="btn btn-secondary" style="flex:1; min-width:150px;"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://instagram.com/leandro.paganello" target="_blank" class="btn btn-secondary" style="flex:1; min-width:150px;"><i class="fab fa-instagram"></i> Instagram</a>
+                    </div>
                 </div>
             </div>
             <div class="hero-image reveal delay-3">
@@ -49,6 +60,41 @@
         </div>
     </header>
 
+    <section id="experience" style="background: linear-gradient(135deg, rgba(138,43,226,0.05), transparent); padding: 120px 0;">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Erfahrung</h2>
+                <div class="line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Technical Director @ TRAX Jugendkirche</h3>
+                        <p class="timeline-date">2020 - Present</p>
+                        <p>Leitung der technischen Infrastruktur für Events mit 1500+ Besuchern. Audio, Licht, Video und Live-Streaming Koordination.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal delay-1">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>ProPresenter Operator & Lighting Designer</h3>
+                        <p class="timeline-date">2018 - 2020</p>
+                        <p>Grafikdesign in ProPresenter. GrandMA2 Lichttechnik. Streaming und Multimedia Integration.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal delay-2">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Freiberuflicher Techniker & Fotograf</h3>
+                        <p class="timeline-date">2015 - 2018</p>
+                        <p>Events, Hochzeiten und Konzerte. Audio Engineering und Event Management.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="tech">
         <div class="container">
             <div class="section-header reveal">
@@ -56,53 +102,61 @@
                 <div class="line"></div>
             </div>
             <div class="grid-3">
-                <div class="card hover-trigger reveal">
+                <div class="card hover-trigger reveal expandable-card" data-details="ProPresenter Expert: Slide Design, Animation, Timing Control. Bewegtbilder die deine Rede unterstreichen.">
                     <div class="icon-box"><i class="fas fa-sliders-h"></i></div>
                     <h3>Lyrics Operator</h3>
                     <p>Bedienung des Computers mit ProPresenter. Grafikerstellung, die bewegt.</p>
+                    <small class="reveal-hint">👆 Klick für mehr</small>
                 </div>
-                <div class="card hover-trigger reveal">
+                <div class="card hover-trigger reveal expandable-card" data-details="GrandMA2 & GrandMA3 Lighting: Show Design, Sequencing, DMX Control. Von kleinen Events bis zu großen Productions.">
                     <div class="icon-box"><i class="fas fa-lightbulb"></i></div>
                     <h3>Lighting</h3>
                     <p>Kreative Lichtshows. Programmierung auf GrandMA Konsolen.</p>
+                    <small class="reveal-hint">👆 Klick für mehr</small>
                 </div>
-                <div class="card hover-trigger reveal">
+                <div class="card hover-trigger reveal expandable-card" data-details="Predigt mit visueller Kraft: Designs die Botschaften verstärken. Layout, Color Theory, Typography für maximale Impact.">
                     <div class="icon-box"><i class="fas fa-broadcast-tower"></i></div>
                     <h3>Predigten</h3>
                     <p>Keine langweiligen Gottesdienste. Predigt mit Design</p>
+                    <small class="reveal-hint">👆 Klick für mehr</small>
                 </div>
             </div>
             
             <div class="skills-section reveal">
-                <h3>Skills</h3>
+                <h3>Technical Stack</h3>
+                <p style="color:var(--text-muted); margin-bottom:40px; text-align:center;">Hover over the skills to see proficiency level</p>
                 <div class="skills-grid">
-                    <div class="skill">
+                    <div class="skill skill-card" title="Expert: 10+ years experience">
                         <svg class="progress-circle" width="120" height="120">
                             <circle cx="60" cy="60" r="50" stroke="var(--border)" stroke-width="10" fill="none"></circle>
                             <circle cx="60" cy="60" r="50" stroke="var(--primary)" stroke-width="10" fill="none" stroke-dasharray="314" stroke-dashoffset="31.4" class="progress-circle-fill" data-percent="99"></circle>
                         </svg>
                         <span>ProPresenter</span>
+                        <small>Expert</small>
                     </div>
-                    <div class="skill">
+                    <div class="skill skill-card" title="Advanced: 8+ years experience">
                         <svg class="progress-circle" width="120" height="120">
                             <circle cx="60" cy="60" r="50" stroke="var(--border)" stroke-width="10" fill="none"></circle>
                             <circle cx="60" cy="60" r="50" stroke="var(--primary)" stroke-width="10" fill="none" stroke-dasharray="314" stroke-dashoffset="47.1" class="progress-circle-fill" data-percent="85"></circle>
                         </svg>
                         <span>GrandMA2 Lighting</span>
+                        <small>Advanced</small>
                     </div>
-                    <div class="skill">
+                    <div class="skill skill-card" title="Intermediate: 5+ years experience">
                         <svg class="progress-circle" width="120" height="120">
                             <circle cx="60" cy="60" r="50" stroke="var(--border)" stroke-width="10" fill="none"></circle>
                             <circle cx="60" cy="60" r="50" stroke="var(--primary)" stroke-width="10" fill="none" stroke-dasharray="314" stroke-dashoffset="62.8" class="progress-circle-fill" data-percent="38"></circle>
                         </svg>
                         <span>Audio Engineering</span>
+                        <small>Intermediate</small>
                     </div>
-                    <div class="skill">
+                    <div class="skill skill-card" title="Intermediate: 6+ years experience">
                         <svg class="progress-circle" width="120" height="120">
                             <circle cx="60" cy="60" r="50" stroke="var(--border)" stroke-width="10" fill="none"></circle>
                             <circle cx="60" cy="60" r="50" stroke="var(--primary)" stroke-width="10" fill="none" stroke-dasharray="314" stroke-dashoffset="78.5" class="progress-circle-fill" data-percent="30"></circle>
                         </svg>
                         <span>Graphic Design</span>
+                        <small>Intermediate</small>
                     </div>
                 </div>
             </div>
@@ -160,7 +214,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="btn-group reveal delay-4" style="justify-content:center; margin-top:40px;">
+                <a href="projects-work.html" class="btn btn-primary hover-trigger">Mehr Projekte</a>
+            </div>        </div>
     </section>
 
     <section id="contact">
@@ -180,12 +236,26 @@
     </section>
 
     <footer>
-        <p>&copy; 2024-2026 leandropaganello | <a href="impressum.html" style="color: inherit; text-decoration: none;">Impressum</a></p>
+        <p>&copy; <span id="copyright-year"></span> leandropaganello | <a href="impressum.html" style="color: inherit; text-decoration: none;">Impressum</a></p>
     </footer>
 
     <button id="back-to-top" aria-label="Back to top">↑</button>
+    
+    <!-- Hidden: Skill details modal -->
+    <div id="detail-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('detail-modal').style.display='none'">&times;</span>
+            <div class="modal-body">
+                <h2 id="detail-title"></h2>
+                <p id="detail-text"></p>
+                <div style="margin-top:20px; padding-top:20px; border-top:1px solid var(--border);">
+                    <p style="color:var(--text-muted); font-size:0.9rem;">💡 Tip: Lade meinen CV herunter für vollständige Details</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Modal -->
+    <!-- Project Modal -->
     <div id="project-modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
